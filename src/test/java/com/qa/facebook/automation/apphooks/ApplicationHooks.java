@@ -23,7 +23,8 @@ public class ApplicationHooks {
 	@Before(order = 0)
 	public void getProperty() {		
 		configReader = new ConfigReader();
-		prop = configReader.init_prop();		
+		prop = configReader.init_prop();
+		System.out.println("I am testing repo");
 	}
 	
 	@Before (order = 1)
